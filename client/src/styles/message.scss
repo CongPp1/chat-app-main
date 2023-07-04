@@ -1,0 +1,31 @@
+@mixin mess($float, $color) {
+    float: $float;
+    clear: both;
+    margin: 2px 10px 0px 0;
+    background-color: $color;
+    padding: 5px 10px;
+    border-radius: 15px;
+    word-break: break-all;
+}
+
+
+.my-mess {
+    
+    .username {
+        display: none;
+    }
+    .message {
+        color: #fff;
+        @include mess(right, #3181fc);
+    }
+}
+
+.other-mess {
+    .username {
+        float: left;
+        clear: both;
+    }
+    .message{
+        @include mess(left, #e4e6eb)
+    }
+}

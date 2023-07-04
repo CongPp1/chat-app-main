@@ -1,0 +1,11 @@
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: #ccc;
+    min-height: 100vh;
+    @include flex()
+}
